@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText_sequence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="6"
+            android:background="@drawable/path2"
+            android:digits="AGTCagtc"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Enter your sequence here."
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingTop="6dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="6dp"
+            android:scrollHorizontally="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="	#f5f5f5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/textView_index"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Amino acid index" />
+
+        <TextView
+            android:id="@+id/textView_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/textView_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/textView_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText_index"
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:digits="1234567890"
+
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Index"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#f5f5f5" />
+
+        <Button
+            android:id="@+id/button_index1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:ems="10"
+            android:hint="X"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#f5f5f5" />
+
+        <Button
+            android:id="@+id/button_index2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:ems="10"
+            android:hint="X"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#f5f5f5" />
+
+        <Button
+            android:id="@+id/button_index3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:ems="10"
+            android:hint="X"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#f5f5f5" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="12dp"
+        android:id="@+id/button_change_sequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/path3"
+        android:text="Change Sequence"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/editText_changed_sequence"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:enabled="false"
+        android:textIsSelectable="true" />
+
+    <LinearLayout
+        android:id="@+id/constraint_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:background="@drawable/rectangle2"
+                android:textColor="@android:color/white"
+                android:id="@+id/button_add_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:padding="8dp"
+
+                android:textSize="24sp"
+                android:background="@drawable/rectangle2"
+                android:textColor="@android:color/white"
+                android:id="@+id/button_remove_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/editText_primer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_horizontal|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toStartOf="@+id/button_remove_right"
+            app:layout_constraintStart_toEndOf="@+id/button_remove_left"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:padding="8dp"
+
+                android:background="@drawable/rectangle2"
+                android:textColor="@android:color/white"
+                android:id="@+id/button_add_right"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:padding="8dp"
+
+                android:background="@drawable/rectangle2"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:id="@+id/button_remove_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="infromation text" />
+    <TextView
+        android:id="@+id/textView_numberOfCharacters"
+        android:layout_marginStart="8dp"
+        android:text="Number of Characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/textView_temperature"
+android:layout_marginStart="8dp"
+        android:text="Temperature"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+</LinearLayout>
